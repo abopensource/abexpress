@@ -1,0 +1,24 @@
+{
+  "recommendations": [
+    "aeschli.vscode-css-formatter",
+    "alefragnani.bookmarks",
+    "bierner.markdown-preview-github-styles",
+    "christian-kohler.npm-intellisense",
+    "dbaeumer.vscode-eslint",
+    "dsznajder.es7-react-js-snippets",
+    "ecmel.vscode-html-css",
+    "esbenp.prettier-vscode",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "jock.svg",
+    "mgmcdermott.vscode-language-babel",
+    "mrmlnc.vscode-autoprefixer",
+    "mrmlnc.vscode-postcss-sorting",
+    "ms-vscode.cmake-tools",
+    "ms-vscode.vscode-typescript-next",
+    "nucllear.vscode-extension-auto-import",
+    "rvest.vs-code-prettier-eslint",
+    "twxs.cmake",
+    "xabikos.reactsnippets"
+  ]
+}

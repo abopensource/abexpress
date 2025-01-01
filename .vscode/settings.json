@@ -1,0 +1,234 @@
+{
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "postcssSorting.config": {
+    "order": [
+      "declarations",
+      "dollar-variables",
+      "custom-properties",
+      "at-rules",
+      "rules"
+    ],
+    "properties-order": [
+      /* Layout */
+      "display",
+
+      "grid",
+      "grid-template-rows",
+      "grid-template-columns",
+      "grid-template-areas",
+      "grid-auto-rows",
+      "grid-auto-columns",
+      "grid-auto-flow",
+      "grid-column-gap",
+      "grid-row-gap",
+      "column-gap",
+      "row-gap",
+
+      "align-content",
+      "justify-content",
+      "justify-items",
+      "place-items",
+      "align-items",
+      "align-self",
+      "gap",
+      "flex-flow",
+      "flex-direction",
+      "flex-wrap",
+      "flex",
+      "flex-grow",
+      "flex-shrink",
+      "flex-basis",
+
+      "order",
+
+      /* Box */
+      "box-sizing",
+      "width",
+      "min-width",
+      "max-width",
+      "height",
+      "min-height",
+      "max-height",
+      "aspect-ratio",
+
+      "margin",
+      "margin-top",
+      "margin-right",
+      "margin-bottom",
+      "margin-left",
+      "padding",
+      "padding-top",
+      "padding-right",
+      "padding-bottom",
+      "padding-left",
+      "border",
+      "border-top",
+      "border-right",
+      "border-bottom",
+      "border-left",
+      "border-width",
+      "border-top-width",
+      "border-right-width",
+      "border-bottom-width",
+      "border-left-width",
+      "border-style",
+      "border-top-style",
+      "border-right-style",
+      "border-bottom-style",
+      "border-left-style",
+      "border-color",
+      "border-top-color",
+      "border-right-color",
+      "border-bottom-color",
+      "border-left-color",
+      "border-radius",
+      "border-top-left-radius",
+      "border-top-right-radius",
+      "border-bottom-right-radius",
+      "border-bottom-left-radius",
+
+      "outline",
+      "outline-width",
+      "outline-style",
+      "outline-color",
+      "outline-offset",
+
+      "box-shadow",
+
+      "position",
+      "top",
+      "right",
+      "bottom",
+      "left",
+      "inset",
+      "z-index",
+
+      "overflow",
+      "overflow-x",
+      "overflow-y",
+
+      "clip",
+
+      "float",
+      "clear",
+
+      "vertical-align",
+
+      "visibility",
+
+      /* Background */
+      "color-scheme",
+      "background",
+      "background-image",
+      "background-position",
+      "background-size",
+      "background-repeat",
+      "background-origin",
+      "background-clip",
+      "background-attachment",
+      "background-color",
+
+      /* Font */
+      "color",
+      "font",
+      "font-style",
+      "font-weight",
+      "font-size",
+      "line-height",
+      "font-family",
+      "font-synthesis",
+      "font-smoothing",
+      "-webkit-font-smoothing",
+      "-moz-osx-font-smoothing",
+      "src",
+
+      "letter-spacing",
+      "word-spacing",
+      "text-indent",
+      "text-align",
+      "white-space",
+      "word-break",
+      "word-wrap",
+      "hyphens",
+      "text-decoration",
+      "text-transform",
+      "text-shadow",
+      "direction",
+      "unicode-bidi",
+
+      "overflow-wrap",
+      "text-overflow",
+      "text-size-adjust",
+
+      /* Animation and Transition */
+      "animation",
+      "animation-name",
+      "animation-duration",
+      "animation-timing-function",
+      "animation-delay",
+      "animation-iteration-count",
+      "animation-direction",
+      "animation-fill-mode",
+      "animation-play-state",
+      "animation-timeline",
+
+      "transition",
+      "transition-behavior",
+      "transition-delay",
+      "transition-duration",
+      "transition-property",
+      "transition-timing-function",
+
+      /* Other */
+      "content",
+
+      "list-style",
+      "list-style-image",
+      "list-style-position",
+      "list-style-type",
+      "counter-reset",
+      "counter-increment",
+
+      "quotes",
+
+      "table-layout",
+      "caption-side",
+      "empty-cells",
+
+      "resize",
+
+      "filter",
+      "opacity",
+
+      "cursor",
+      "pointer-events",
+      "user-select",
+      "-webkit-user-select",
+      "-webkit-user-drag",
+      "-webkit-touch-callout",
+
+      "scroll-behavior",
+      "scroll-padding",
+      "scroll-padding-top",
+      "scroll-padding-right",
+      "scroll-padding-bottom",
+      "scroll-padding-left",
+      "scroll-snap-align",
+      "scroll-snap-margin",
+      "scroll-snap-stop",
+      "scroll-snap-type",
+      "scrollbar-color",
+      "scrollbar-width"
+    ]
+  },
+  "reactSnippets.settings.prettierEnabled": true,
+  "svg.preview.mode": "svg"
+}
