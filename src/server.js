@@ -267,8 +267,8 @@ const setRouter = (app, config) => {
   if (config.router) {
     log.debug(`${_tag} set router by configuration`)
     app.use("/", config.router)
-    setErrorHandler(app, config)
   }
+  setErrorHandler(app, config)
 
   if (!app.setRouter) {
     /**
