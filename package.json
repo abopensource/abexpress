@@ -8,18 +8,23 @@
     "backend",
     "express",
     "framework",
+    "log",
+    "logger",
+    "morgan",
     "node.js",
     "node",
     "server",
-    "web"
+    "web",
+    "winston"
   ],
-  "homepage": "",
+  "homepage": "https://github.com/",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/",
+    "email": "bokjaeoh@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/"
   },
   "author": "Aiden <bokjaeoh@gmail.com>",
   "license": "ISC",
@@ -27,7 +32,7 @@
     "node": ">= 20.18.0"
   },
   "main": "src/index.js",
-  "module": "src/index.js",
+  "type": "module",
   "dependencies": {
     "compression": "^1.7.5",
     "connect-timeout": "^1.9.0",
