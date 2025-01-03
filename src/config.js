@@ -115,7 +115,7 @@ const CONFIG = {
        * @property {Array} userAgent List of `userAgent` strings that will allow `CORS`(Cross-Origin Resource Sharing).
        * @default [] No `userAgent` is found that allows `CORS`(Cross-Origin Resource Sharing).
        */
-      userAgent: "",
+      userAgent: [],
     },
     /**
      * @property {Object} error Configuration object related to `Express` server application errors.
@@ -126,6 +126,22 @@ const CONFIG = {
        * @default false Use `404`(Not Found) error.
        */
       ignore404: false,
+    },
+    /**
+     * @property {Object} helmet Configuration object related to `helmet` that middleware hardens the security of `Express` server applications by setting HTTP Response headers.
+     * @see {@link https://github.com/helmetjs/helmet}
+     */
+    helmet: {
+      /**
+       * @property {Object|null} option Configuration object for the `helmet` middleware for enhanced security.
+       * @default null Use the default configuration of the `helmet` middleware.
+       */
+      option: null,
+      /**
+       * @property {Boolean} use Whether to use `helmet` middleware for enhanced security.
+       * @default true Use the `helmet` middleware.
+       */
+      use: true,
     },
     /**
      * @property {Express.Router} router `Router` instance object to use in `Express` server application instance.
