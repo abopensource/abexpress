@@ -4,7 +4,7 @@ import split from "split"
 import winston from "winston"
 import winstonDaily from "winston-daily-rotate-file"
 
-import { applyConfig } from "./config"
+import { applyConfig } from "./config.js"
 
 /**
  * @constant {Array} LEVELS List of log levels.
