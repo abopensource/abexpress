@@ -17,14 +17,14 @@
     "web",
     "winston"
   ],
-  "homepage": "https://github.com/",
+  "homepage": "https://github.com/abopensource/abexpress",
   "bugs": {
-    "url": "https://github.com/",
+    "url": "https://github.com/abopensource/abexpress/issues",
     "email": "bokjaeoh@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/"
+    "url": "https://github.com/abopensource/abexpress"
   },
   "author": "Aiden <bokjaeoh@gmail.com>",
   "license": "ISC",
