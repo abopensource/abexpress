@@ -10,9 +10,8 @@ import http from "http"
 import morgan from "morgan"
 import path from "path"
 
-import { applyConfig } from "./config"
-import { createLogger } from "./logger"
-import { log } from "console"
+import { applyConfig } from "./config.js"
+import { createLogger } from "./logger.js"
 
 /**
  * The `Router` interface of the `Express` framework.
@@ -33,20 +32,19 @@ const Router = express.Router
 const createServer = async (config = {}) => {
   const _tag = "[ABExpress][server][createServer]"
 
-  const cfg = applyConfig(config)
+  config = applyConfig(config)
 
-  const log = createLogger(cfg)
+  const log = createLogger(config)
   global.log = log
 
-  log.debug(`${_tag}(config: %o)`, config)
-  log.debug(`${_tag} applied config: %o`, cfg)
+  log.debug(`${_tag} applied config: %o`, config)
   log.info(`${"-".repeat(80)}`)
 
   const app = express()
-  setExpress(app, cfg.server)
-  useExpress(app, cfg.server)
+  setExpress(app, config.server)
+  useExpress(app, config.server)
 
-  if (cfg.logger?.stream && log?.stream) {
+  if (config.logger?.stream && log?.stream) {
     log.debug(`${_tag} app use log stream with morgan`)
     app.use(morgan("combined", { stream: log.stream }))
   } else {
@@ -54,10 +52,10 @@ const createServer = async (config = {}) => {
     app.use(morgan("combined"))
   }
 
-  setRouter(app, cfg.server)
+  setRouter(app, config.server)
 
   const server = http.createServer(app)
-  const port = getPort(cfg.server)
+  const port = getPort(config.server)
   const bind = typeof port === "string" ? `namepipe ${port}` : `${port} port`
 
   server.on("error", (error) => {
@@ -252,7 +250,7 @@ const setExpress = (app, config) => {
   if (fs.existsSync(pathViews)) {
     app.set("views", pathViews)
   } else {
-    log.error(`${_tag} Directory for view pages does not exist.`)
+    log.error(`${_tag} directory not exists for view pages: %o`, pathViews)
   }
 }
 
