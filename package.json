@@ -1,0 +1,70 @@
+{
+  "name": "abexpress",
+  "version": "1.0.0",
+  "description": "ABExpress is a framework that provides a web application server using Node.js and is based on the Express framework.",
+  "keywords": [
+    "application",
+    "back-end",
+    "backend",
+    "express",
+    "framework",
+    "log",
+    "logger",
+    "morgan",
+    "node.js",
+    "node",
+    "server",
+    "web",
+    "winston"
+  ],
+  "homepage": "https://github.com/",
+  "bugs": {
+    "url": "https://github.com/",
+    "email": "bokjaeoh@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/"
+  },
+  "author": "Aiden <bokjaeoh@gmail.com>",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 20.18.0"
+  },
+  "main": "src/index.js",
+  "type": "module",
+  "dependencies": {
+    "compression": "^1.7.5",
+    "connect-timeout": "^1.9.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.3",
+    "split": "^1.0.1",
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.14.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.4.2",
+    "prettier-eslint": "^16.3.0"
+  },
+  "scripts": {
+    "coverage": "node --experimental-vm-modules node_modules/jest/bin/jest --coverage --passWithNoTests --detectOpenHandles",
+    "format:check": "prettier --check ./",
+    "format": "prettier --write ./",
+    "lint": "eslint src/**",
+    "start": "node .",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest --passWithNoTests --detectOpenHandles"
+  }
+}

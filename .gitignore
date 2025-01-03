@@ -1,0 +1,55 @@
+# macOS ------------------------------------------------------------------------
+## General
+.DS_Store
+
+# Windows ----------------------------------------------------------------------
+## Folder config file
+[Dd]esktop.ini
+
+## Recycle Bin used on file shares
+$RECYCLE.BIN
+
+## Windows shortcuts
+*.lnk
+
+## Windows thumbnail cache files
+Thumbs.db
+
+# Node -------------------------------------------------------------------------
+## Dependency directories
+node_modules
+jspm_packages
+.pnp
+.pnp.js
+package-lock.json
+
+## Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+## Generate output
+build
+dist
+out
+
+## Coverage
+coverage
+
+## Yarn
+.pnp.*
+.yarn/build-state.yml
+.yarn/cache
+.yarn/install-state.gz
+.yarn/unplugged
+
+# Visual Studio Code -----------------------------------------------------------
+## General
+.vscode/*
+!.vscode/*.code-snippets
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
