@@ -1,6 +1,6 @@
 {
   "name": "abexpress",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ABExpress is a framework that provides a web application server using Node.js and is based on the Express framework.",
   "keywords": [
     "application",
@@ -31,8 +31,8 @@
   "engines": {
     "node": ">= 20.18.0"
   },
-  "main": "src/index.js",
   "type": "module",
+  "main": "src/index.js",
   "dependencies": {
     "compression": "^1.7.5",
     "connect-timeout": "^1.9.0",
@@ -61,9 +61,9 @@
   },
   "scripts": {
     "coverage": "node --experimental-vm-modules node_modules/jest/bin/jest --coverage --passWithNoTests --detectOpenHandles",
-    "format:check": "prettier --check ./",
-    "format": "prettier --write ./",
-    "lint": "eslint src/**",
+    "format:check": "prettier --check .",
+    "format": "prettier --write .",
+    "lint": "eslint ./src",
     "start": "node .",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest --passWithNoTests --detectOpenHandles"
   }
