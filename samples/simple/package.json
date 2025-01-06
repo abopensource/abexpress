@@ -1,0 +1,15 @@
+{
+  "name": "abexpress-samples-simple",
+  "version": "1.0.0",
+  "author": "Aiden <bokjaeoh@gmail.com>",
+  "license": "ISC",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "abexpress": "file:../../"
+  },
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

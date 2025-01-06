@@ -1,6 +1,6 @@
 {
   "name": "abexpress",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "ABExpress is a framework that provides a web application server using Node.js and is based on the Express framework.",
   "keywords": [
     "application",
@@ -8,18 +8,23 @@
     "backend",
     "express",
     "framework",
+    "log",
+    "logger",
+    "morgan",
     "node.js",
     "node",
     "server",
-    "web"
+    "web",
+    "winston"
   ],
-  "homepage": "",
+  "homepage": "https://github.com/abopensource/abexpress",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/abopensource/abexpress/issues",
+    "email": "bokjaeoh@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/abopensource/abexpress"
   },
   "author": "Aiden <bokjaeoh@gmail.com>",
   "license": "ISC",
@@ -27,7 +32,7 @@
     "node": ">= 20.18.0"
   },
   "main": "src/index.js",
-  "module": "src/index.js",
+  "type": "module",
   "dependencies": {
     "compression": "^1.7.5",
     "connect-timeout": "^1.9.0",
@@ -37,6 +42,7 @@
     "express-session": "^1.18.1",
     "helmet": "^8.0.0",
     "morgan": "^1.10.0",
+    "pug": "^3.0.3",
     "split": "^1.0.1",
     "winston": "^3.17.0",
     "winston-daily-rotate-file": "^5.0.0"
@@ -54,8 +60,11 @@
     "prettier-eslint": "^16.3.0"
   },
   "scripts": {
+    "coverage": "node --experimental-vm-modules node_modules/jest/bin/jest --coverage --passWithNoTests --detectOpenHandles",
     "format:check": "prettier --check ./",
     "format": "prettier --write ./",
-    "lint": "eslint ."
+    "lint": "eslint src/**",
+    "start": "node .",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest --passWithNoTests --detectOpenHandles"
   }
 }
