@@ -102,7 +102,7 @@ const createServer = async (config = {}) => {
  */
 const getPort = (config) => {
   const port = process.env.PORT || config.port || 80
-  return port.constructor.name === "String" ? port : parseInt(port, 10)
+  return isNaN(port) ? port : parseInt(port, 10)
 }
 
 /**
