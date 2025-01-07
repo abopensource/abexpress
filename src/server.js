@@ -302,7 +302,7 @@ const useCORS = (app, config) => {
   log.debug(`${_tag} option: %o`, option)
 
   const allowAgentCORS = (req, callback) => {
-    log.debug(`${_tag} allowAgentCORS(req: %o, callback: %o)`, req, callback)
+    // log.debug(`${_tag} allowAgentCORS(req: %o, callback: %o)`, req, callback)
     log.debug(`${_tag} allowAgentCORS User-Agent: %o`, req.header("User-Agent"))
 
     let origin = userAgent.some(
@@ -312,7 +312,7 @@ const useCORS = (app, config) => {
   }
 
   const allowListCORS = (req, callback) => {
-    log.debug(`${_tag} allowListCORS(req: %o, callback: %o)`, req, callback)
+    // log.debug(`${_tag} allowListCORS(req: %o, callback: %o)`, req, callback)
     log.debug(`${_tag} allowListCORS Origin: %o`, req.header("Origin"))
 
     let origin = allowList.some(
