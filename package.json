@@ -1,6 +1,6 @@
 {
   "name": "abexpress",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "ABExpress is a framework that provides a web application server using Node.js and is based on the Express framework.",
   "keywords": [
     "application",
