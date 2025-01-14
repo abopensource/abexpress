@@ -102,7 +102,7 @@ const createServer = async (config = {}) => {
  */
 const getPort = (config) => {
   const port = process.env.PORT || config.port || 80
-  return port.constructor.name === "String" ? port : parseInt(port, 10)
+  return isNaN(port) ? port : parseInt(port, 10)
 }
 
 /**
@@ -302,21 +302,24 @@ const useCORS = (app, config) => {
   log.debug(`${_tag} option: %o`, option)
 
   const allowAgentCORS = (req, callback) => {
-    log.debug(`${_tag} allowAgentCORS(req: %o, callback: %o)`, req, callback)
-    log.debug(`${_tag} allowAgentCORS User-Agent: %o`, req.header("User-Agent"))
+    // log.debug(`${_tag} allowAgentCORS(req: %o, callback: %o)`, req, callback)
+    log.debug(
+      `${_tag} allowAgentCORS User-Agent: %o`,
+      req.headers["user-agent"],
+    )
 
     let origin = userAgent.some(
-      (agent) => req.header("User-Agent")?.indexOf(agent) !== -1,
+      (agent) => req.headers["user-agent"]?.indexOf(agent) !== -1,
     )
     callback(null, { optionsSuccessStatus: 200, origin })
   }
 
   const allowListCORS = (req, callback) => {
-    log.debug(`${_tag} allowListCORS(req: %o, callback: %o)`, req, callback)
-    log.debug(`${_tag} allowListCORS Origin: %o`, req.header("Origin"))
+    // log.debug(`${_tag} allowListCORS(req: %o, callback: %o)`, req, callback)
+    log.debug(`${_tag} allowListCORS Origin: %o`, req.headers.origin)
 
     let origin = allowList.some(
-      (allow) => req.header("Origin")?.indexOf(allow) !== -1,
+      (allow) => req.headers.origin?.indexOf(allow) !== -1,
     )
 
     callback(null, { optionsSuccessStatus: 200, origin })
