@@ -11,3 +11,13 @@ samples
 # Tests ------------------------------------------------------------------------
 coverage
 test
+
+# Project Setting --------------------------------------------------------------
+.editorconfig
+.gitignore
+.npmignore
+.prettierrc
+eslint.config.mjs
+
+# Visual Studio Code -----------------------------------------------------------
+.vscode
