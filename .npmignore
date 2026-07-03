@@ -1,23 +1,23 @@
-# Dependencies -----------------------------------------------------------------
-node_modules
-package-lock.json
-
-# Logs -------------------------------------------------------------------------
-logs
-
-# Samples ----------------------------------------------------------------------
-samples
-
-# Tests ------------------------------------------------------------------------
-coverage
-test
-
-# Project Setting --------------------------------------------------------------
+# Project Setting
 .editorconfig
 .gitignore
 .npmignore
 .prettierrc
 eslint.config.mjs
 
-# Visual Studio Code -----------------------------------------------------------
+# Dependencies
+node_modules
+package-lock.json
+
+# Logs
+logs
+
+# Samples
+samples
+
+# Tests
+coverage
+test
+
+# Visual Studio Code
 .vscode

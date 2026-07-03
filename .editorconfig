@@ -3,11 +3,11 @@ root = true
 [*]
 charset = utf-8
 end_of_line = lf
-indent_size = 2
+indent_size = 4
 indent_style = space
 insert_final_newline = true
-max_line_length = 80
-tab_width = 2
+max_line_length = 120
+tab_width = 4
 trim_trailing_whitespace = true
 
 [*.md]
@@ -15,5 +15,14 @@ indent_size = 4
 tab_width = 4
 trim_trailing_whitespace = false
 
-[*.{kt,kts}]
-insert_final_newline = false
+[*.{css,cjs,html,js,json,jsp,mjs,xml,yml}]
+indent_size = 2
+tab_width = 2
+
+[*.java]
+indent_size = 4
+tab_width = 4
+
+[.prettierrc]
+indent_size = 2
+tab_width = 2

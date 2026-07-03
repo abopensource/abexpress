@@ -1,12 +1,12 @@
 {
   "recommendations": [
     "aeschli.vscode-css-formatter",
-    "alefragnani.bookmarks",
     "bierner.markdown-preview-github-styles",
     "christian-kohler.npm-intellisense",
     "dbaeumer.vscode-eslint",
     "dsznajder.es7-react-js-snippets",
     "ecmel.vscode-html-css",
+    "EditorConfig.EditorConfig",
     "esbenp.prettier-vscode",
     "formulahendry.auto-close-tag",
     "formulahendry.auto-rename-tag",

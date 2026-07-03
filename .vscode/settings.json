@@ -1,21 +1,38 @@
 {
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[ignore]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsp]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[markdown]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.renderWhitespace": "all",
+  "editor.trimAutoWhitespace": true,
+  "editor.trimWhitespaceOnDelete": true,
+  "files.trimTrailingWhitespace": true,
   "postcssSorting.config": {
-    "order": [
-      "declarations",
-      "dollar-variables",
-      "custom-properties",
-      "at-rules",
-      "rules"
-    ],
+    "order": ["declarations", "dollar-variables", "custom-properties", "at-rules", "rules"],
     "properties-order": [
       /* Layout */
       "display",
